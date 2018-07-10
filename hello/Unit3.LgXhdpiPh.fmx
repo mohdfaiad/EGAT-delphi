@@ -1,0 +1,32 @@
+inherited Form3_LgXhdpiPh: TForm3_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  Fill.Kind = Solid
+  DesignerMasterStyle = 3
+  inherited Edit1: TEdit
+    Position.X = 72.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 297.000000000000000000
+    Size.PlatformDefault = False
+    KillFocusByReturn = True
+  end
+  inherited Label1: TLabel
+    Position.X = 72.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    Text = ''
+  end
+  inherited Button1: TButton
+    StyledSettings = [Family, Size]
+    Position.X = 96.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 257.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Say Hello'
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claBlue
+    OnClick = Button1Click
+  end
+end
