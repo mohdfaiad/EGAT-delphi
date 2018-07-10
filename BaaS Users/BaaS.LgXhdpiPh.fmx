@@ -1,0 +1,30 @@
+inherited Form4_LgXhdpiPh: TForm4_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited username: TEdit
+    Position.X = 136.000000000000000000
+    Position.Y = 128.000000000000000000
+  end
+  inherited password: TEdit
+    Password = True
+    Position.X = 136.000000000000000000
+    Position.Y = 184.000000000000000000
+  end
+  inherited Label1: TLabel
+    Position.X = 32.000000000000000000
+  end
+  inherited Label2: TLabel
+    Position.X = 40.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.PlatformDefault = False
+  end
+  inherited lastAction: TLabel
+    Position.X = 96.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited CreateUserButton: TButton
+    Position.X = 280.000000000000000000
+    Position.Y = 240.000000000000000000
+  end
+end
