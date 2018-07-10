@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/06/25 15:03:44.000.170,=C:\Users\egat1\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2018/06/25 15:04:12.000.060,C:\Users\egat1\Desktop\ked\FCM.pas=C:\Users\egat1\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2018/06/25 15:04:12.000.060,C:\Users\egat1\Desktop\ked\FCM.fmx=C:\Users\egat1\Documents\Embarcadero\Studio\Projects\Unit3.fmx</Transaction>
+    <Transaction>2018/06/25 15:04:59.000.709,C:\Users\egat1\Desktop\ked\FCM_01.dproj=C:\Users\egat1\Documents\Embarcadero\Studio\Projects\Project3.dproj</Transaction>
+    <Transaction>2018/06/25 15:07:17.000.473,=C:\Users\egat1\Desktop\ked\FCM\DW.PushClient.pas</Transaction>
+    <Transaction>2018/06/25 15:07:17.000.485,=C:\Users\egat1\Desktop\ked\FCM\DW.RegisterFCM.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone" Android="android"/>
+	</ActiveMobileDevice>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="android-support-v4.dex.jar"/>
+    <File Path="cloud-messaging.dex.jar"/>
+    <File Path="fmx.dex.jar"/>
+    <File Path="google-analytics-v2.dex.jar"/>
+    <File Path="google-play-billing.dex.jar"/>
+    <File Path="google-play-licensing.dex.jar"/>
+    <File Path="google-play-services.dex.jar"/>
+    <File Path="FCM"/>
+    <File Path="FCM\DW.PushClient.pas"/>
+    <File Path="FCM\DW.RegisterFCM.pas"/>
+    <File Path="FCM.pas"/>
+    <File Path="FCM.fmx"/>
+  </ProjectSortOrder>
+</BorlandProject>
