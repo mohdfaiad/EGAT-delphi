@@ -1,0 +1,19 @@
+inherited Form3_LgXhdpiPh: TForm3_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  Fill.Kind = Solid
+  DesignerMasterStyle = 3
+  inherited DateEdit1: TDateEdit
+    ShowClearButton = True
+    ShowCheckBox = True
+    OnChange = DateEdit1Change
+    Position.X = 104.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Style, FontColor]
+    TextSettings.Font.Family = '@Gungsuh'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.HorzAlign = Center
+  end
+end
