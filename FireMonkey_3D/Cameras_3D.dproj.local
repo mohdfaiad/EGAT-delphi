@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/06/27 02:08:38.000.162,=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/06/28 08:56:39.000.549,=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/06/28 08:59:26.000.630,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\FireMonkey_3D\Unit1.fmx</Transaction>
+    <Transaction>2018/06/28 08:59:26.000.630,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\FireMonkey_3D\Unit1.pas</Transaction>
+    <Transaction>2018/06/28 08:59:43.000.138,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\FireMonkey_3D\Cameras_3D.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android="7FB7N18512004861"/>
+	</ActiveMobileDevice>
+</BorlandProject>

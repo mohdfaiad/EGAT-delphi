@@ -1,0 +1,71 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Viewport3D1: TViewport3D
+    Align = Client
+    Camera = CameraZ
+    Color = claTeal
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    UsingDesignCamera = False
+    OnMouseDown = Viewport3D1MouseDown
+    OnMouseMove = Viewport3D1MouseMove
+    object Cube1: TCube
+      RotationAngle.X = 349.945098876953200000
+      RotationAngle.Y = 56.368522644042970000
+      RotationAngle.Z = 359.773437500000000000
+      Width = 1.000000000000000000
+      Height = 1.000000000000000000
+      Depth = 1.000000000000000000
+      MaterialSource = LightMaterialSource1
+      Quanternion = 
+        '(0.0451343730092049,0.467897355556488,0.0295234099030495,0.88213' +
+        '5450839996)'
+    end
+    object Light1: TLight
+      Color = claWhite
+      LightType = Directional
+      SpotCutOff = 180.000000000000000000
+      Position.X = -5.000000000000000000
+      Position.Z = -5.000000000000000000
+      RotationAngle.X = 18.915451049804690000
+      RotationAngle.Y = 97.547454833984370000
+      RotationAngle.Z = 34.520957946777340000
+      Width = 1.000000000000000000
+      Height = 1.000000000000000000
+      Depth = 1.000000000000000000
+      Quanternion = 
+        '(0.22936050593853,0.0686860308051109,0.97040182352066,-0.0315743' +
+        '237733841)'
+    end
+    object DummyXY: TDummy
+      Width = 1.000000000000000000
+      Height = 1.000000000000000000
+      Depth = 1.000000000000000000
+      object CameraZ: TCamera
+        AngleOfView = 45.000000000000000000
+        Position.Z = -10.000000000000000000
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+      end
+    end
+  end
+  object LightMaterialSource1: TLightMaterialSource
+    Diffuse = claWhite
+    Ambient = xFF202020
+    Emissive = claNull
+    Specular = xFF606060
+    Shininess = 30
+    Left = 96
+    Top = 72
+  end
+end

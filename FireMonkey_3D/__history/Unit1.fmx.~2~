@@ -1,0 +1,55 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Viewport3D1: TViewport3D
+    Align = Client
+    Color = claTeal
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    object Cube1: TCube
+      RotationAngle.X = 0.040870666503906250
+      RotationAngle.Y = 56.368522644042970000
+      RotationAngle.Z = 345.803161621093800000
+      Width = 1.000000000000000000
+      Height = 1.000000000000000000
+      Depth = 1.000000000000000000
+      MaterialSource = LightMaterialSource1
+      Quanternion = 
+        '(-0.123181894421577,-0.46872690320015,0.00984757672995329,-0.874' +
+        '656498432159)'
+    end
+    object Light1: TLight
+      Color = claWhite
+      LightType = Directional
+      SpotCutOff = 180.000000000000000000
+      Position.X = -5.000000000000000000
+      Position.Z = -5.000000000000000000
+      RotationAngle.X = 2.388832092285156000
+      RotationAngle.Y = 323.808868408203100000
+      RotationAngle.Z = 47.908142089843750000
+      Width = 1.000000000000000000
+      Height = 1.000000000000000000
+      Depth = 1.000000000000000000
+      Quanternion = 
+        '(0.144183591008186,-0.27574634552002,0.379923641681671,0.8711108' +
+        '56533051)'
+    end
+  end
+  object LightMaterialSource1: TLightMaterialSource
+    Diffuse = claWhite
+    Ambient = xFF202020
+    Emissive = claNull
+    Specular = xFF606060
+    Shininess = 30
+    Left = 96
+    Top = 72
+  end
+end
