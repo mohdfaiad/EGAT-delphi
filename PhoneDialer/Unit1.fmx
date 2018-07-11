@@ -1,0 +1,67 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object lblCarrierName: TLabel
+    Position.X = 72.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 241.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Carrier Name'
+  end
+  object lblISOCountryCode: TLabel
+    Position.X = 72.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'ISO Country Code'
+  end
+  object btnGetCarrierInfo: TButton
+    Position.X = 128.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Get Carrier Info'
+    OnClick = btnGetCarrierInfoClick
+  end
+  object Label1: TLabel
+    Position.X = 64.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Telephone Number'
+  end
+  object edtTelephoneNumber: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    KeyboardType = PhonePad
+    ReturnKeyType = Go
+    Position.X = 64.000000000000000000
+    Position.Y = 344.000000000000000000
+    Size.Width = 265.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    KillFocusByReturn = True
+  end
+  object btnMakeCall: TButton
+    Position.X = 120.000000000000000000
+    Position.Y = 400.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Make Call'
+    OnClick = btnMakeCallClick
+  end
+end

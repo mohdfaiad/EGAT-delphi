@@ -1,0 +1,16 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited Label1: TLabel
+    Position.Y = 384.000000000000000000
+  end
+  inherited edtTelephoneNumber: TEdit
+    Position.X = 104.000000000000000000
+    Position.Y = 440.000000000000000000
+  end
+  inherited btnMakeCall: TButton
+    Position.X = 96.000000000000000000
+    Position.Y = 496.000000000000000000
+  end
+end
