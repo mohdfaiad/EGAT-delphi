@@ -81,11 +81,24 @@ implementation
 {$R *.LgXhdpiPh.fmx ANDROID}
 {$R *.SSW3.fmx ANDROID}
 
+//Web brower
 procedure TForm4.OpenURL;
 begin
   WebBrowser1.Navigate(Edit2.Text);
 end;
 
+procedure TForm4.Button2Click(Sender: TObject);
+begin
+   WebBrowser1.GoBack;
+end;
+
+procedure TForm4.Edit2Change(Sender: TObject);
+begin
+  OpenURL;
+end;
+
+
+//Backend Storage
 procedure TForm4.AddItemButtonClick(Sender: TObject);
 var
     LJSONObject: TJSONObject;
@@ -106,15 +119,6 @@ begin
 
 end;
 
-procedure TForm4.Button2Click(Sender: TObject);
-begin
-   WebBrowser1.GoBack;
-end;
-
-procedure TForm4.Edit2Change(Sender: TObject);
-begin
-  OpenURL;
-end;
 
 procedure TForm4.ListView1DeleteItem(Sender: TObject; AIndex: Integer);
 begin
@@ -142,6 +146,34 @@ begin
   end;
 end;
 
+procedure TForm4.RefreshButtonClick(Sender: TObject);
+begin
+  RefreshList;
+end;
+
+
+procedure TForm4.RefreshList;
+var
+  LJSONArray : TJSONArray;
+  LItem: TListViewItem;
+  I: Integer;
+begin
+  LJSONArray := TJSONArray.Create;
+  try
+    BackendStorage1.Storage.QueryObjects('ShoppingList', [], LJSONArray);
+    ListView1.Items.Clear;
+    for I := 0 to LJSONArray.Count-1 do
+    begin
+      LItem := ListView1.Items.Add;
+      LItem.Text := (LJSonArray.Items[I].GetValue<string>('item'));
+    end;
+  finally
+    LJSONArray.Free;
+  end;
+ end;
+
+
+//Notification
 procedure TForm4.PushEvents1DeviceRegistered(Sender: TObject);
 begin
   Memo1.Lines.Add('Device Registered' + LineFeed);
@@ -186,33 +218,6 @@ begin
     N.Free;
   End;
 end;
-
-
-procedure TForm4.RefreshButtonClick(Sender: TObject);
-begin
-  RefreshList;
-end;
-
-procedure TForm4.RefreshList;
-var
-  LJSONArray : TJSONArray;
-  LItem: TListViewItem;
-  I: Integer;
-begin
-  LJSONArray := TJSONArray.Create;
-  try
-    BackendStorage1.Storage.QueryObjects('ShoppingList', [], LJSONArray);
-    ListView1.Items.Clear;
-    for I := 0 to LJSONArray.Count-1 do
-    begin
-      LItem := ListView1.Items.Add;
-      LItem.Text := (LJSonArray.Items[I].GetValue<string>('item'));
-    end;
-  finally
-    LJSONArray.Free;
-  end;
-end;
-
 
 
 end.
