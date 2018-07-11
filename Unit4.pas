@@ -81,22 +81,6 @@ implementation
 {$R *.LgXhdpiPh.fmx ANDROID}
 {$R *.SSW3.fmx ANDROID}
 
-//Web brower
-procedure TForm4.OpenURL;
-begin
-  WebBrowser1.Navigate(Edit2.Text);
-end;
-
-procedure TForm4.Button2Click(Sender: TObject);
-begin
-   WebBrowser1.GoBack;
-end;
-
-procedure TForm4.Edit2Change(Sender: TObject);
-begin
-  OpenURL;
-end;
-
 
 //Backend Storage
 procedure TForm4.AddItemButtonClick(Sender: TObject);
@@ -118,7 +102,6 @@ begin
       end
 
 end;
-
 
 procedure TForm4.ListView1DeleteItem(Sender: TObject; AIndex: Integer);
 begin
@@ -150,7 +133,6 @@ procedure TForm4.RefreshButtonClick(Sender: TObject);
 begin
   RefreshList;
 end;
-
 
 procedure TForm4.RefreshList;
 var
@@ -219,5 +201,21 @@ begin
   End;
 end;
 
+
+//Web brower
+procedure TForm4.OpenURL;
+begin
+  WebBrowser1.Navigate(Edit2.Text);
+end;
+
+procedure TForm4.Button2Click(Sender: TObject);
+begin
+   WebBrowser1.GoBack;
+end;
+
+procedure TForm4.Edit2Change(Sender: TObject);
+begin
+  OpenURL;
+end;
 
 end.
